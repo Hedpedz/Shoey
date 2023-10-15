@@ -1,13 +1,18 @@
 h1 {
-    color: rgb(233, 23, 212);
+    color: #60524b;
+    font-family: 'Lilita One';font-size: 70px;
+    text-align: left; margin-top: 0px; margin-bottom: 0px;
+    
+   
   }
  
 ul {
   list-style-type: none;
-  margin: 0;
+  margin: -8px;
   padding: 0;
+  position: relative; top: -25px; left: 0px;
   overflow: hidden;
-  background-color: #333333;
+  background-color: #f3eae2;
 }
 
 li {
@@ -16,8 +21,8 @@ li {
 
 li a {
   display: block;
-  color: white;
-  text-align: center;
+  color: rgb(24, 19, 19);
+  font-family: 'mandali';font-size: 20px;
   padding: 16px;
   text-decoration: none;
 }
@@ -25,3 +30,13 @@ li a {
 li a:hover {
   background-color: #111111;
 }
+
+.fa-solid {
+  position: relative; top: -55px; left: 240px;
+  font-size: 30px;
+  padding: 5px;
+  
+}
+
+
+
