@@ -1,25 +1,91 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Shoey</title>
-    <link rel="stylesheet" href="CSS/style.css" />
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/style.css" />
+        <link href='https://fonts.googleapis.com/css?family=Lilita One' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Mandali' rel='stylesheet'>
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+        <link rel="stylesheet" href="css/font/css/fontawesome.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/font/css/brands.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/font/css/solid.css" rel="stylesheet">
+        <title>Shoey</title>
+    </head>
+    <body>
+        <div id="grid-container"></div>
+        <header>
+            <nav>
+                <a href="#" id="logo">Shoey</a>
+                <div id="ikoner">
+                    <i id="ham" class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-magnifying-glass" style="color: #60524b;"></i>
+                    <i class="fa-solid fa-cart-shopping" style="color: #60524b;"></i>
+                    <i class="fa-solid fa-heart" style="color: #60524b;"></i>
+                    <i class="fa-solid fa-user" style="color: #60524b;"></i>
+                </div>
+            
+                <ul class="navbar">
+                    <li><a href="#">Dame</a></li>
+                    <li><a href="products.html">Mann</a></li>
+                    <li><a href="#services">Barn</a></li>
+                </ul>
+            </nav>
 
-  </head>
+            <section>
+                <a href="#" class="salg">SALG</a>
+            </section>
+        </header>
+        <main>
+            <section class="flex-section">
+                <img src="IMG/Shoey shoes/DreamShaper_v7_Product_image_of_futuristic_women_shoe_high_qua_0(1).jpeg" alt="Forside dame">
+                <section>
+                    <h2>Dame sko</h2>
+                    <p>Nulla quis erat eu lorem hendrerit maximus sit amet eget massa.</p>
+                </section>
+            </section>
+            <section class="flex-section right">
+                <img src="IMG/Shoey shoes/DreamShaper_v7_Product_image_of_futuristic_man_shoe_high_quali_0.jpeg" alt="Forside mann">
+                <section>
+                    <h2>Mann sko</h2>
+                    <p>Duis non augue quis arcu placerat viverra fringilla sit amet tellus.</p>
+                </section>
+            </section>
+            <section id="services">
+                <h2>Services</h2>
+                <article>
+                    <h3>Lorem ipsum</h3>
+                    <p>Duis non augue quis arcu placerat viverra fringilla sit amet tellus.</p>                  
+                </article>
+                <article>
+                    <h3>Lorem ipsum</h3>
+                    <p>Nunc pellentesque est ac massa mollis dapibus.</p>
+                </article>
+                <article>
+                    <h3>Lorem ipsum</h3>
+                    <p>Sed metus ipsum, eleifend ut posuere et, consequat et nisl.</p>
+                </article>
+            </section>
+        </main>
+        <footer>
 
+        </footer>
+        <div>
+        <script>
 
-<body>
+            let x = document.querySelector(".navbar")
 
-<h1>Shoey</h1>
-<p>In this example, we use CSS to style the list horizontally, to create a navigation menu:</p>
+            document.getElementById("ham").addEventListener("click", (e) =>{
+                if (x.className === "navbar") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "navbar";
+                }
+            })
 
-<ul>
-  <li><a href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
-</ul>
+        </script>
+    </body>
 
-</body>
 </html>
+
 
