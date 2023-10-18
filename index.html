@@ -1,29 +1,98 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Shoey</title>
-    <link rel="stylesheet" href="CSS/style.css" />
-    <script src="https://kit.fontawesome.com/e98ec06238.js" crossorigin="anonymous"></script>
-    <link href='https://fonts.googleapis.com/css?family=Lilita One' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Mandali' rel='stylesheet'>
-  </head>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/style.css" />
+        <script src="https://kit.fontawesome.com/e98ec06238.js" crossorigin="anonymous"></script>
+        <link href='https://fonts.googleapis.com/css?family=Lilita One' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Mandali' rel='stylesheet'>
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+        <link rel="stylesheet" href="css/font/css/fontawesome.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/font/css/brands.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/font/css/solid.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <title>Shoey</title>
+    </head>
+    <body>
+        <div id="grid-container"></div>
+        <header>
+        <h1>Shoey</h1>
+            <nav>
+                <a href="#" id="logo">Logo</a>
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i id="ham" class="fa-solid fa-bars"></i>
+                </div>
+            
+                <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="#services">Services</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#dame">Dame</a></li>
+                    <li><a href="#mann">Mann</a></li>
+                    <li><a href="#barn">Barn</a></li>
+                </ul>
+            </nav>
 
-  <body>
-    <h1>Shoey</h1>
+            <section>
+                <h1>Bolle</h1>
+                <a href="#" class="black-btn">Read more</a>
+            </section>
+        </header>
+        <main>
+            <section class="flex-section">
+                <img src="https://placehold.co/600x400" alt="Grå placeholer bilde">
+                <section>
+                    <h2>Lorem ipsum</h2>
+                    <p>Nulla quis erat eu lorem hendrerit maximus sit amet eget massa.</p>
+                </section>
+            </section>
+            <section class="flex-section right">
+                <img src="https://placehold.co/600x400" alt="Grå placeholder bilde">
+                <section>
+                    <h2>Lorem ipsum</h2>
+                    <p>Duis non augue quis arcu placerat viverra fringilla sit amet tellus.</p>
+                </section>
+            </section>
+            <section id="services">
+                <h2>Services</h2>
+                <article>
+                    <h3>Lorem ipsum</h3>
+                    <p>Duis non augue quis arcu placerat viverra fringilla sit amet tellus.</p>                  
+                </article>
+                <article>
+                    <h3>Lorem ipsum</h3>
+                    <p>Nunc pellentesque est ac massa mollis dapibus.</p>
+                </article>
+                <article>
+                    <h3>Lorem ipsum</h3>
+                    <p>Sed metus ipsum, eleifend ut posuere et, consequat et nisl.</p>
+                </article>
+            </section>
+        </main>
+        <footer>
+
+        </footer>
+        <div>
+        <script>
+
+            let x = document.querySelector(".navbar")
+
+            document.getElementById("ham").addEventListener("click", (e) =>{
+                if (x.className === "navbar") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "navbar";
+                }
+            })
+
+        </script>
+    </body>
     
-
-<i class="fa-solid fa-magnifying-glass" style="color: #60524b;"></i>
-<i class="fa-solid fa-cart-shopping" style="color: #60524b;"></i>
-<i class="fa-solid fa-heart" style="color: #60524b;"></i>
-<i class="fa-solid fa-user" style="color: #60524b;"></i>
-
-<ul>
-  <li><a href="#dame">Dame</a></li>
-  <li><a href="#mann">Mann</a></li>
-  <li><a href="#barn">Barn</a></li>
-</ul>
-
-
-</body>
 </html>
+
+
+    
