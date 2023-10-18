@@ -7,6 +7,14 @@
 
 }
 
+
+#ikoner{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #60524b;
+}
+
 body{
   font-family: Arial, Helvetica, sans-serif;
 }
