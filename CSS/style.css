@@ -44,26 +44,6 @@ body{
   padding: 0.5rem;
 }
 
-header{
-  font-size: 1.5rem;
-  font-weight: 600;
-  grid-area: header;
-
-}
-
-header nav {
-  display: grid
-  justify-content: space-between;
-  position: relative;
-}
-
-header nav div{
-  display: flex;
-  gap: 1rem;
-}
-
-
-
 .navbar{
   display: none;
 }
