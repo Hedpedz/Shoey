@@ -13,36 +13,41 @@
         <title>Shoey</title>
     </head>
     <body>
-        <div id="grid-container"></div>
+        <div id="top-container"></div>
         <header>
-            <nav>
-                <a href="#" id="logo">Shoey</a>
-                <div id="ikoner">
-                    <i id="ham" class="fa-solid fa-bars"></i>
-                    <i class="fa-solid fa-magnifying-glass" style="color: #60524b;"></i>
-                    <i class="fa-solid fa-cart-shopping" style="color: #60524b;"></i>
-                    <i class="fa-solid fa-heart" style="color: #60524b;"></i>
-                    <i class="fa-solid fa-user" style="color: #60524b;"></i>
-                </div>
+            <div class="header">
+                <a href="#" class="logo">Shoey</a>
+                <nav class="ikoner">
+                    <li class="fa-solid fa-magnifying-glass"></li>
+                    <li class="fa-solid fa-cart-shopping"></li>
+                    <li class="fa-solid fa-heart"></li>
+                    <li class="fa-solid fa-user"></li>
+                </nav>
+            </div>
+                        
             
                 <ul class="navbar">
-                    <li><a href="#">Dame</a></li>
-                    <li><a href="products.html">Mann</a></li>
-                    <li><a href="#services">Barn</a></li>
+                    <i id="hamburger" class="fa-solid fa-bars"></i>
+                    <li><a href="produkt.html">Dame</a></li>
+                    <li><a href="#">Mann</a></li>
+                    <li><a href="#">Barn</a></li>
                 </ul>
             </nav>
-
             <section>
                 <a href="#" class="salg">SALG</a>
             </section>
+        </div>
         </header>
         <main>
-            <section class="flex-section">
+            <section class="main-section">
                 <img src="IMG/Shoey shoes/DreamShaper_v7_Product_image_of_futuristic_women_shoe_high_qua_0(1).jpeg" alt="Forside dame">
                 <section>
                     <h2>Dame sko</h2>
                     <p>Nulla quis erat eu lorem hendrerit maximus sit amet eget massa.</p>
                 </section>
+            </section>
+            <section>
+                <a href="#" class="salg">HØSTENS NYHETER</a>
             </section>
             <section class="flex-section right">
                 <img src="IMG/Shoey shoes/DreamShaper_v7_Product_image_of_futuristic_man_shoe_high_quali_0.jpeg" alt="Forside mann">
@@ -70,22 +75,11 @@
         <footer>
 
         </footer>
-        <div>
-        <script>
-
-            let x = document.querySelector(".navbar")
-
-            document.getElementById("ham").addEventListener("click", (e) =>{
-                if (x.className === "navbar") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "navbar";
-                }
-            })
-
-        </script>
+        
+      
     </body>
 
 </html>
 
 
+    
