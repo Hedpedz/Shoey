@@ -1,18 +1,24 @@
-#top-container{
-  display: flex;
+body {
+  display: grid;
+  grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "section"
+      "article"
+      "footer";
+  grid-template-rows: auto;
+  font-family: 'mandali';
 }
 
 .header{
+  grid-area: header;
   display: flex;
   justify-content: space-between; 
   align-items: baseline;
   background-color: #ffffff;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+  
 }
-
-
 
 .logo{
   text-decoration: none;
@@ -31,12 +37,9 @@
 
 }
 
-body{
-  font-family: 'mandali';
-}
-
 
 .navbar{
+  grid-area: nav;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -46,29 +49,29 @@ body{
   margin: 0;
   padding: 0;
   padding-right: 5.5rem;
+}
   
 
-   li a {
-    display: flex;
-    text-decoration: none;
-    font-family: 'mandali';
-    font-size: 25px;
-    color: #60524b;
+.navbar li a {
+  display: flex;
+  text-decoration: none;    
+  font-family: 'mandali';
+  font-size: 25px;
+  color: #60524b;
   }
 
-  #hamburger{
-    display: flex;
-    flex-direction: column;
-    color: #60524b;
-    font-size: 2rem;
-    align-self: center;
-    padding-left: 0.2rem;
+#hamburger{
+  color: #60524b;
+  font-size: 2rem;
+  align-self: center;
+  padding-left: 0.2rem;
     
     }
   
-}
+
 
 .banner{
+  grid-area: nav;
   display: flex;
   justify-content: center;
   padding: 0.2rem;
@@ -79,6 +82,13 @@ body{
   border-top: 0.1px solid #c6c3c1;
   font-weight: 400;
 }
+
+
+
+main section img {
+  width: 100%;
+}
+
 
 .ultra_blue{
   display: flex;
@@ -93,9 +103,6 @@ body{
   padding-right: 1rem;
   height: 2rem;
   
- 
-  
-
 }
 
 .space_runner{
@@ -117,12 +124,8 @@ body{
 
 
 
-main section img{
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-.venstre_gruppe button {
+.knapper button {
+  grid-area: section;
   background-color: #fff9fb; 
   border: 1px solid #c6c3c1; 
   color: rgb(0, 0, 0); 
@@ -133,33 +136,55 @@ main section img{
   float: left;
 }
 
-.venstre_gruppe button:hover {
+.knapper button:hover {
     background-color: #ffd7f4;
 }
 
 
-.høyre_gruppe button {
+.produkter_kategori button {
+  grid-area: nav;
   background-color: #fff9fb; 
-  border: 1px solid #c6c3c1; 
-  color: rgb(0, 0, 0); 
-  padding: 10px 24px; 
+  border: 0.1px solid #c6c3c1; 
+  padding: 4px; 
   cursor: pointer; 
-  width: 50%; 
+  width: 25%; 
   display: block; 
-  float: right;
+  float: left;
+ 
 }
 
-.høyre_gruppe button:hover {
-  background-color: #ffd7f4;
+.produkter_kategori button:hover {
+    background-color: #ffd7f4;
 }
 
+.produkter_sorter {
+  display: flex;
+  grid-area: nav;
+  padding: 8px;
+  margin: 8px;
+  gap: 25px;
+  
+}
 
+ 
 
-footer{
-  grid-area: footer;
+.produkter_sorter button {
+  background-color: #fff9fb; 
+  border: 0.1px solid #c6c3c1; 
+  padding: 3px; 
+  cursor: pointer; 
+  width: 20%;  
+  border-radius: 10px;
+  box-shadow: #60524b 0px 0px 3px 0px;
+ 
+}
+
+.produkter_sorter button:hover {
+    background-color: #ffd7f4;
 }
 
 #services{
+  grid-area: article;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -178,4 +203,33 @@ footer{
   min-width: 200px;
 }
 
+.bilder {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px; 
+}
 
+
+
+@media only screen and (min-width: 850px) {
+  
+  .logo {
+    font-size: 6rem;
+}
+
+.ikoner li {
+    font-size: 3rem;
+}
+
+}
+  
+@media (max-width: 500px) {
+  .logo {
+      font-size: 3rem;
+  }
+
+  .ikoner li {
+      font-size: 1.5rem;
+      
+  }
+}
