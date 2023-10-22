@@ -86,7 +86,8 @@ body {
 
 
 main section img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 
@@ -209,6 +210,10 @@ main section img {
   gap: 10px; 
 }
 
+.bilder img {
+  max-width: 100%;
+  height: auto;
+}
 
 
 @media only screen and (min-width: 850px) {
