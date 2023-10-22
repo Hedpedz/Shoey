@@ -1,14 +1,15 @@
 body {
-  display: grid;
-  grid-template-areas:
-      "header"
-      "nav"
-      "main"
-      "section"
-      "article"
-      "footer";
-  grid-template-rows: auto;
   font-family: 'mandali';
+  display: grid;
+  grid-template-areas: "header" "nav" "main" "section" "article" "footer";
+}
+
+
+
+
+ main {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .header{
@@ -34,37 +35,37 @@ body {
   color: #60524b;
   font-size: 2.2rem;
   padding-inline-end: 0.5rem;
+  padding: 0.8rem;
 
 }
 
 
 .navbar{
   grid-area: nav;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   background-color: #ffffff; 
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-right: 5.5rem;
+  
 }
   
 
 .navbar li a {
-  display: flex;
-  text-decoration: none;    
+  display: grid;
+  text-decoration: none;  ;  
   font-family: 'mandali';
   font-size: 25px;
   color: #60524b;
+  
   }
 
 #hamburger{
   color: #60524b;
   font-size: 2rem;
   align-self: center;
-  padding-left: 0.2rem;
+  padding-left: 0.5rem;;
     
     }
   
@@ -83,6 +84,18 @@ body {
   font-weight: 400;
 }
 
+.tekst_lignende_produkter{
+  grid-area: section;
+  display: flex;
+  justify-content: center;
+  padding: 0.2rem;
+  text-decoration: none;
+  background-color: #fff9fb;
+  color: #60524b;
+  border-bottom: 0.1px solid #c6c3c1;
+  border-top: 0.1px solid #c6c3c1;
+  font-weight: 400;
+}
 
 
 main section img {
@@ -90,11 +103,15 @@ main section img {
   height: auto;
 }
 
+section section img {
+  max-width: 100%;
+  height: auto;
+}
 
 .ultra_blue{
   display: flex;
   justify-content:space-between;
-  align-items: last baseline;
+  align-items: center;
   line-height: 0;
   font-size: 1rem;
   text-decoration: none;
@@ -102,7 +119,8 @@ main section img {
   color: #60524b;
   padding-left: 0.5rem;
   padding-right: 1rem;
-  height: 2rem;
+  padding-bottom: 3px;
+  
   
 }
 
@@ -146,12 +164,14 @@ main section img {
   grid-area: nav;
   background-color: #fff9fb; 
   border: 0.1px solid #c6c3c1; 
-  padding: 4px; 
+  padding: 7px; 
   cursor: pointer; 
   width: 25%; 
-  display: block; 
   float: left;
- 
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  
 }
 
 .produkter_kategori button:hover {
@@ -160,29 +180,63 @@ main section img {
 
 .produkter_sorter {
   display: flex;
+  flex-wrap: wrap;
   grid-area: nav;
-  padding: 8px;
-  margin: 8px;
-  gap: 25px;
-  
-}
+  padding: 10px;
+  gap: 10px;
+  justify-content: space-between;
 
- 
+}
 
 .produkter_sorter button {
   background-color: #fff9fb; 
   border: 0.1px solid #c6c3c1; 
-  padding: 3px; 
+  padding: 2px; 
   cursor: pointer; 
-  width: 20%;  
+  width: 19%;  
   border-radius: 10px;
   box-shadow: #60524b 0px 0px 3px 0px;
- 
+  max-width: 6rem;
 }
 
 .produkter_sorter button:hover {
     background-color: #ffd7f4;
 }
+
+.produkt_ultra{
+  padding-top: 1rem;
+  padding-bottom: 0;
+  
+}
+
+
+.handlekurv{
+display: grid;
+grid-template-columns: auto 1fr;
+align-items: last baseline;
+justify-content:center;
+text-decoration: none;
+color:#000000;
+font-size: 1rem;
+background-color: #f2e5e5;
+padding-top: 5px;
+padding-left: 3rem;
+
+
+}
+
+.beskrivelse{
+  grid-area: main;
+  grid-template-rows: 1fr;
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 5px;
+  background-color: #f2e5e5;
+  color: #60524b;
+
+}
+
+
 
 #services{
   grid-area: article;
@@ -207,16 +261,19 @@ main section img {
 .bilder {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px; 
+  gap: 20px; 
 }
 
-.bilder img {
-  max-width: 100%;
-  height: auto;
-}
 
+.ligende_produkter {
+  display: grid;
+  grid-area: section;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px; 
+}
 
 @media only screen and (min-width: 850px) {
+
   
   .logo {
     font-size: 6rem;
@@ -226,6 +283,17 @@ main section img {
     font-size: 3rem;
 }
 
+.bilder {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px; 
+}
+
+.ligende_produkter {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px; 
+}
 }
   
 @media (max-width: 500px) {
