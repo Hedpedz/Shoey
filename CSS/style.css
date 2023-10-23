@@ -2,30 +2,6 @@ body {
   font-family: 'mandali';
 }
 
-main {
-  grid-area: main;
-  padding: 10px;
-  display: flex;
-  font-family: 'mandali';
-}
-
-nav {
-  grid-area: nav;
-}
-
-section {
-  grid-area: section;
-  text-align: center;
-}
-
-article {
-  grid-area: article;
-}
-
-footer {
-  grid-area: footer;
-}
-
 #grid-container {
   display: grid;
   grid-template-areas: "header" "nav" "main" "section" "article" "footer";
@@ -48,6 +24,50 @@ header nav {
 header nav div {
   display: flex;
   gap: 2rem;
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: main;
+  padding: 10px;
+  display: flex;
+  font-family: 'mandali';
+}
+
+section {
+  grid-area: section;
+  text-align: center;
+}
+
+article {
+  grid-area: article;
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+}
+
+main section img {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.bilder{
+  display: grid;
+  gap: 20px;
+}
+
+.lignende_bilder {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
 }
 
 .logo {
@@ -82,7 +102,6 @@ header nav div {
   padding-left: 1.5rem;
 }
 
-
 .banner {
   grid-area: nav;
   display: flex;
@@ -108,7 +127,6 @@ header nav div {
   font-weight: 400;
 }
 
-
 .ultra_blue, .space_runner {
   display: flex;
   justify-content: space-between;
@@ -132,15 +150,15 @@ header nav div {
 }
 
 .knapper button {
-    background-color: #fff9fb; 
-    border: 0.1px solid #c6c3c1; 
-    color: #60524b;
-    padding: 10px 24px; 
-    cursor: pointer; 
-    width: 50%; 
-    display: block; 
-    float: left;
-  }
+  background-color: #fff9fb; 
+  border: 0.1px solid #c6c3c1; 
+  color: #60524b;
+  padding: 10px 24px; 
+  cursor: pointer; 
+  width: 50%; 
+  display: block; 
+  float: left;
+}
 
 .produkter_kategori button{
   grid-area: nav;
@@ -180,7 +198,7 @@ justify-content: space-between;
   display: flex;
   flex-wrap: wrap;
   grid-area: nav;
-  padding: 10px;
+  padding: 5px;
   gap: 10px;
   justify-content: space-between;
   color: #60524b;
@@ -228,29 +246,6 @@ justify-content: space-between;
 }
 
 
-main section img {
-  max-width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-}
-
-.bilder{
-display: grid;
-  gap: 20px;
-}
-
-
-.lignende_bilder {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 25px;
-}
-
-.footer {
-  display: flex;
-  justify-content: center;
-}
 
 @media (min-width: 850px) {
   #grid-container {
@@ -298,11 +293,11 @@ display: grid;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center;;
   }
 
   .flex-section img {
-    width: 80%;
+    width: 99%;
   }
 
 }
