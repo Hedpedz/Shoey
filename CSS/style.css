@@ -6,6 +6,7 @@ main {
   grid-area: main;
   padding: 10px;
   display: flex;
+  font-family: 'mandali';
 }
 
 nav {
@@ -14,6 +15,7 @@ nav {
 
 section {
   grid-area: section;
+  text-align: center;
 }
 
 article {
@@ -266,7 +268,6 @@ display: grid;
     height: auto;
     max-width: 100%;
     flex-direction: column;
-    align-items: space-between;
   }
 
   .bilder {
