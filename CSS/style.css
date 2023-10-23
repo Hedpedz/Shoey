@@ -132,7 +132,7 @@ header nav div {
 .knapper button {
     background-color: #fff9fb; 
     border: 0.1px solid #c6c3c1; 
-    color: rgb(0, 0, 0); 
+    color: #60524b;
     padding: 10px 24px; 
     cursor: pointer; 
     width: 50%; 
@@ -143,6 +143,7 @@ header nav div {
 .produkter_kategori button{
   grid-area: nav;
   background-color: #fff9fb; 
+  color: #60524b;
   border: 0.1px solid #c6c3c1; 
   padding: 7px; 
   cursor: pointer; 
@@ -162,6 +163,7 @@ justify-content: space-between;
 
 .produkter_sorter button {
   background-color: #fff9fb;
+  color: #60524b;
   border: 0.1px solid #c6c3c1;
   cursor: pointer;
   width: 50%;
@@ -179,6 +181,7 @@ justify-content: space-between;
   padding: 10px;
   gap: 10px;
   justify-content: space-between;
+  color: #60524b;
 }
 
 .produkter_sorter button {
